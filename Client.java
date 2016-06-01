@@ -35,8 +35,7 @@ public class Client {
 		
 		OutputStream out=socket.getOutputStream();
 		
-		out.write(s.getBytes());
-		
+		int x=1;
 		InputStream is=socket.getInputStream();
 		byte buf[]=new byte[5120];
 		int len =is.read(buf);
